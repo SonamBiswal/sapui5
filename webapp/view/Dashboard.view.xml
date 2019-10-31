@@ -1,0 +1,91 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" 
+xmlns="sap.m" xmlns:f="sap.f" xmlns:l="sap.ui.layout" 
+xmlns:viz="sap.viz.ui5.controls" 
+controllerName="EbmApp.LeadManagement.controller.Dashboard"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App id="app">
+		<f:ShellBar
+	     
+		homeIcon="Image/energylogo.png"
+			showNotifications="true"
+			notificationsNumber="2">
+		<f:profile>
+			<f:Avatar initials="SA"/>
+		</f:profile>
+	</f:ShellBar>
+                             	<l:DynamicSideContent 
+                             	id="DynamicSideContent"
+					class="sapUiDSCExplored ">  <!--// sapUiContentPadding"-->
+                             		
+                             		<l:mainContent>
+					<HBox alignContent="Center">
+					<GenericTile class="sapUiTinyMarginBegin  sapUiTinyMarginTop myCustomTile" header="Company Achivements" subheader="Achivements" press="onAchivement" sizeBehavior="Responsive">
+						<TileContent>
+						<ImageContent src="sap-icon://approvals"/>
+							</TileContent>
+					
+					</GenericTile>
+					<GenericTile class="sapUiTinyMarginBegin  sapUiTinyMarginTop myCustomTile" header="Company Leads" subheader="Leads" press="onLeads" sizeBehavior="Responsive" > 
+						<TileContent>
+						<ImageContent src="sap-icon://leads"/>
+							</TileContent>
+					</GenericTile>
+					<GenericTile class="sapUiTinyMarginBegin  sapUiTinyMarginTop myCustomTile" header="Create Admin" subheader="Creation" press="onCreate" sizeBehavior="Responsive"> 
+						<TileContent>
+						<ImageContent src="sap-icon://create"/>
+							</TileContent>
+					</GenericTile>
+					<GenericTile class="sapUiTinyMarginBegin  sapUiTinyMarginTop myCustomTile" header="Admin Overview" subheader="Details" press="onAchivement" sizeBehavior="Responsive"> 
+						<TileContent>
+						<ImageContent src="sap-icon://company-view"/>
+							</TileContent>
+					</GenericTile>
+					</HBox>
+				<l:VerticalLayout id="vl1" width="100%">
+					<l:BlockLayout id="bl1" >
+						<l:BlockLayoutRow accentCells="Accent1">
+							<l:BlockLayoutCell
+							id="Accent1"
+							width="5"
+							title="">
+							<viz:VizFrame xmlns="sap.viz" id="idpiechart" vizType="pie" width="100%" heigth="70%"/> 
+							</l:BlockLayoutCell>
+							<l:BlockLayoutCell
+							
+							    width="5">
+								<viz:VizFrame xmlns="sap.viz" id="idStackedChart"  vizType="column" width="100%" height="70%"/>
+							</l:BlockLayoutCell>
+							
+							
+						</l:BlockLayoutRow>
+					</l:BlockLayout>
+				</l:VerticalLayout>
+					</l:mainContent>
+			
+			<l:sideContent>
+			<!--	<l:VerticalLayout
+				class="sapUiContentPadding"
+		     	width="100%">
+					<IconTabBar
+					id="idIconTabBarFiori2"
+					upperCase="False"
+					headerMode="Inline"
+					headerBackgroundDesign="Transparent"
+					applyContentPadding="false">
+						<items>
+							<IconTabFilter
+							text="Leads"
+							count="2">
+								<List id="notificationlist" items
+							</IconTabFilter>
+						</items>
+						
+						
+						
+						</IconTabBar>
+					
+				</l:VerticalLayout>-->
+				</l:sideContent>
+		 </l:DynamicSideContent>
+	</App>
+</mvc:View>

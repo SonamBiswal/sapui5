@@ -1,0 +1,13 @@
+/* Enter your custom styles here */
+.mybtn.sapMBtn .sapMBtnInner{
+	background-color: #ec7f22;
+	color: #fafafa;
+}
+.btn2.sapMBtn .sapMBtnInner{
+
+	color: #92630d;
+}
+ .myFooter.sapContrast.sapMIBar.sapMFooter-CTX {
+    background-color: #21558403;
+    border-top: 1px solid #b53a5c00;
+}

@@ -1,0 +1,30 @@
+<mvc:View controllerName="EbmApp.LeadManagement.controller.LoginPage" xmlns:mvc="sap.ui.core.mvc"  xmlns="sap.m">
+	
+		<App id="app" backgroundImage="image/solar.jpg"
+		 backgroundOpacity="0.9">
+		
+				<Page id="page" title="{i18n>title}" showHeader="false" enableScrolling ="false" backgroundDesign="Transparent">
+				
+			        <VBox  fitContainer="true" justifyContent="Center" alignItems="Center" alignContent="Center">
+                    <items>
+                    <Image id="idImage" src="http://lumbinienergy.in/wp-content/uploads/2018/05/lumbini-energy-logo-500x350.png" class="sapUiSmallMarginBegin sapUiSmallMarginBottom"></Image>
+                    <Input id="uid"  placeholder="Username" width="250px" valueLiveUpdate="true" startSuggestion="2" liveChange="true"></Input>
+                    <Input id="pasw"  placeholder="Password" width="250px" type="Password" valueLiveUpdate="true" startSuggestion="2"></Input>
+                    <Button width="250px" text="Log in" type="Default" press=".onLogin" class="mybtn"></Button>
+                    <Button width="250px" text="Forgot Username/Password?" type="Transparent" class="btn2" press=".onForgot"></Button>
+                    </items>
+                    </VBox>
+                <footer>
+            	<Bar>
+				<contentMiddle>
+					<Link text="©Lumbini Elite Solutions ALL RIGHTS RESERVED" 	target="_blank"
+				          href="http://www.lumbinielite.com/"/>
+					<!--<Label text="©Lumbini Elite Solutions ALL RIGHTS RESERVED"/>-->
+				</contentMiddle>
+			   </Bar>
+	     	   </footer>
+					
+				</Page>
+		</App>
+
+</mvc:View>
